@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-brand img {
+    width: 100px; /* Establece el ancho deseado */
+    height: auto; /* Establece la altura automática para mantener la proporción */
+  }
+
+  .menu-color {
+    background-color: yellow;
+  }
+  
+  .color-link {
+    font-weight: bold;
+  }
