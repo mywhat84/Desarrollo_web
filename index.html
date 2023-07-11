@@ -6,6 +6,10 @@
     <title>Pagina de inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
 </head>
 <body>
     <header id="arriba">
@@ -32,20 +36,6 @@
               <li class="nav-item">
                 <a class="nav-link color-link" href="/page/contacto.html">CONTACTO</a>
               </li>
-
-
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle color-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu menu-color">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
-              
             </ul>
             
           </div>
@@ -54,41 +44,88 @@
     </header>
 
     <main>
-        <h2> Titulo </h2>
-        
-        <img src="../1ra pre-entrega/img/holaseñorthompson.jfif" alt="imagen hola señor thompson">
-        
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo illo impedit officia minus alias, iste laboriosam minima tempore modi ullam velit earum labore corrupti nam deserunt praesentium, dolorem amet quis.</p>
 
-        <h3> Mira nuestro video </h3>
-        
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dRW6DijCqQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam iure culpa quod asperiores ad aperiam in, earum quaerat reiciendis quasi, vitae facilis recusandae possimus autem neque dolorum voluptas obcaecati accusantium!</p>
-    </main>
-    
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false" src="/img/banner/banner-1.jpg" alt="banner">
+              </div>
+              <div class="carousel-item">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false" src="/img/banner/banner-2.jpg" alt="banner">
+              </div>
+              <div class="carousel-item">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false" src="/img/banner/banner-3.jpg" alt="banner">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+
+      <div class="inicio">
+          <div class="title">
+            <h2>BIENVENIDO A THE MERCH SIMPSONS</h2>
+          </div>
+          <div class="parrafo">
+          <p>Sumérgete en el fascinante mundo de Los Simpsons con The Merch Simpsons, tu destino de confianza para encontrar los productos más exclusivos y divertidos inspirados en esta icónica serie de animación. Desde camisetas y tazas hasta accesorios para el hogar y coleccionables, tenemos todo lo que necesitas para mostrar tu amor por Homer, Marge, Bart, Lisa y Maggie.</p>
+          </div>
+      </div>
+
+      <div class="cards">
+          <!-- CARDS -->
+          
+          <div class="card" style="width: 18rem;">
+            <img src="/img/productos/remera.jpg" alt="remera the simpsons" width="100%" height="380" href="/page/productos.html">
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="/img/productos/remera_4.jpg" alt="remera the simpsons" width="100%" height="380" href="/page/productos.html">
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="/img/productos/remera_2.jpg" alt="remera the simpsons" width="100%" height="380" href="/page/productos.html">
+          </div>
+          
+          <!-- FIN CARDS -->
+      </div>
+  </main> 
+
+
     <footer>
-        <h4>Todos los derechos rservados</h4>
-        <div>
-            <ul>
-                <li>
-                    <a href="page/entrar.html">
-                        Iniciar sesion
-                    </a>
-                </li>
-            </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>&copy; 2023 MiqueMania. Todos los derechos reservados.</p>
+          </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link color-link" aria-current="page" href="/index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-link" href="/page/about.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-link" href="/page/productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link color-link" href="/page/contacto.html">CONTACTO</a>
+            </li>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="page/about.html" target="_blank">
-                        Acerca de nosotros
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <a href="#arriba"> ir a arriba </a>
+      </div>
     </footer>
+
 
     <!-- script bt -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
