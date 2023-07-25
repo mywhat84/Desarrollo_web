@@ -1,0 +1,213 @@
+
+//------------CARDS-------------------
+
+.cards-title {
+    text-align: center; // Centra los elementos dentro del contenedor
+    margin-top: 5%;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between; // Espacio entre las cards
+    margin-top: 5%;
+    padding: 2% 5%;
+  
+    &-div {
+      width: 18rem;
+      text-align: center; // Centra los elementos dentro de la card
+      margin: 0 10px; // Espacio horizontal entre las cards
+      background-color: $color-bg-light;
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px; // Espacio entre la imagen y el título
+      }
+  
+      &-title {
+        h3 {
+          font-size: 24px;
+          color: $color-text-black;
+          margin-bottom: 10px; // Espacio entre el título y el párrafo
+        }
+      }
+  
+      &-description {
+        color: $color-text-black-2;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .cards-tazas {
+    margin-bottom: 10%;
+  }
+
+  //-----------PRODUCTOS DESCRIPTION----------
+
+  .productos {
+    text-align: center; 
+    padding: 4% 10%;
+    background-color: $color-bg-light;
+  
+    &-title {
+      h2 {
+        font-size: 36px;
+        color: $color-text-black;
+        margin-bottom: 10px; 
+      }
+    }
+  
+    &-parrafo {
+      p {
+        color: $color-text-black-2;
+        line-height: 1.5;
+        margin-top: 10px;
+      }
+    }
+  }
+
+//------------------------TABLET------------------------
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .cards-title {
+      text-align: center;
+      margin-top: 3%;
+    }
+  
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4%;
+      padding: 2% 3%;
+  
+      &-div {
+        width: 45%; /* Ajusta el ancho de las cards para la tablet */
+        text-align: center;
+        margin: 0 5px 20px; /* Espacio horizontal y vertical entre las cards */
+  
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 4px;
+          margin-bottom: 10px;
+        }
+  
+        &-title {
+          h3 {
+            font-size: 22px;
+            color: $color-text-black;
+            margin-bottom: 10px;
+          }
+        }
+  
+        &-description {
+          color: $color-text-black-2;
+          line-height: 1.5;
+          padding: 10px;
+        }
+      }
+    }
+  
+    .cards-tazas {
+      margin-bottom: 5%;
+    }
+  
+    .productos {
+      text-align: center;
+      padding: 4% 5%;
+      background-color: $color-bg-light;
+  
+      &-title {
+        h2 {
+          font-size: 26px;
+          color: $color-text-black-2;
+          margin-bottom: 10px;
+        }
+      }
+  
+      &-parrafo {
+        p {
+          color: $color-text-black-2;
+          line-height: 1.5;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+
+
+//------------------------CELULAR----------------------
+
+@media (max-width: 767px) {
+    .cards-title {
+        text-align: center;
+        margin-top: 3%;
+      }
+    
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 4%;
+        padding: 2% 3%;
+    
+        &-div {
+          width: 90%; /* Ajusta el ancho de las cards para el celular */
+          text-align: center;
+          margin: 0 5px 40px 0px; /* Espacio horizontal y vertical entre las cards */
+          
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 3px;
+          }
+    
+          &-title {
+            h3 {
+              font-size: 22px; /* Ajusta el tamaño del título para el celular */
+              color: $color-text-black-2;
+              margin-bottom: 10px;
+            }
+          }
+    
+          &-description {
+            color: #666;
+            line-height: 1.5;
+            padding: 10px;
+            
+          }
+        }
+      }
+    
+      .cards-tazas {
+        margin-bottom: 5%;
+      }
+    
+      .productos {
+        text-align: center;
+        padding: 4% 5%; /* Ajusta el padding para el celular */
+        background-color: $color-bg-light;
+    
+        &-title {
+          h2 {
+            font-size: 26px; /* Ajusta el tamaño del título para el celular */
+            color: $color-text-black-2;
+            margin-bottom: 10px;
+          }
+        }
+    
+        &-parrafo {
+          p {
+            color: $color-text-black-2;
+            line-height: 1.5;
+            margin-top: 10px;
+          }
+        }
+      }
+}

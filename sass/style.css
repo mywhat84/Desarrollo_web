@@ -1,0 +1,382 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  padding: 2% 10%;
+}
+.about-us-image {
+  width: 600px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.about-us-content {
+  flex: 1;
+}
+.about-us-title {
+  font-size: 30px;
+  color: rgb(26, 26, 26);
+  margin-bottom: 10px;
+}
+.about-us-text {
+  color: rgb(48, 47, 47);
+  line-height: 1.5;
+}
+.about-us-contenido {
+  text-align: center;
+  padding: 4% 10%;
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+.about-us-contenido h2 {
+  color: rgb(216, 216, 0);
+  padding: 2% 0%;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .about-us {
+    display: block;
+    padding: 0% 1% 2%;
+  }
+  .about-us-image {
+    padding: 5px 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  .about-us-content {
+    flex: 1;
+    text-align: center;
+  }
+  .about-us-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .about-us {
+    display: block; /* Cambia a un diseño de bloque en dispositivos móviles */
+    text-align: center; /* Centra todo el contenido en dispositivos móviles */
+  }
+  .about-us-image {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    height: auto; /* La altura se ajustará automáticamente */
+    margin-bottom: 20px;
+  }
+  .about-us-title {
+    font-size: 22px; /* Reduce aún más el tamaño del título para dispositivos móviles */
+  }
+}
+.menu-color {
+  background-color: yellow;
+}
+
+.navbar-brand img {
+  width: 100px; /* Establece el ancho deseado */
+  height: auto; /* Establece la altura automática para mantener la proporción */
+}
+
+.color-link {
+  font-weight: bold;
+}
+
+.inicio {
+  padding: 10% 0 10% 0;
+  background-color: rgb(231, 229, 229);
+  text-align: center;
+}
+.inicio-title__parrafo {
+  padding: 0 20% 0 20%;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  padding: 2% 5% 2% 5%;
+}
+.cards-producto img {
+  padding: 5px;
+}
+
+footer {
+  background-color: yellow;
+  padding: 60px 0;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .inicio {
+    padding: 10% 5%;
+  }
+  .inicio-title__parrafo {
+    padding: 0 10px;
+  }
+  .cards {
+    padding: 2% 2%;
+    flex-wrap: wrap;
+  }
+  .cards-producto img {
+    width: 100%;
+  }
+}
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/*mapa */
+.mapa {
+  width: 80%;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*formulario de contacto */
+.formulario {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+.formulario-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formulario-div {
+  flex: 1 1 100%;
+  margin-bottom: 15px;
+}
+.formulario h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.formulario label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.formulario input, .formulario textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(231, 229, 229);
+  border-radius: 5px;
+}
+.formulario textarea {
+  resize: vertical;
+}
+.formulario button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*contacto de The Simpsons Merch */
+.contacto-simpsons {
+  text-align: center;
+  margin: 10%;
+}
+.contacto-simpsons h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.contacto-simpsons p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1000px) {
+  .mapa {
+    width: 100%;
+    padding: 0px 5px 0px 5px;
+  }
+}
+.cards-title {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding: 2% 5%;
+}
+.cards-div {
+  width: 18rem;
+  text-align: center;
+  margin: 0 10px;
+  background-color: rgb(231, 229, 229);
+}
+.cards-div img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.cards-div-title h3 {
+  font-size: 24px;
+  color: rgb(26, 26, 26);
+  margin-bottom: 10px;
+}
+.cards-div-description {
+  color: rgb(48, 47, 47);
+  line-height: 1.5;
+}
+
+.cards-tazas {
+  margin-bottom: 10%;
+}
+
+.productos {
+  text-align: center;
+  padding: 4% 10%;
+  background-color: rgb(231, 229, 229);
+}
+.productos-title h2 {
+  font-size: 36px;
+  color: rgb(26, 26, 26);
+  margin-bottom: 10px;
+}
+.productos-parrafo p {
+  color: rgb(48, 47, 47);
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .cards-title {
+    text-align: center;
+    margin-top: 3%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    padding: 2% 3%;
+  }
+  .cards-div {
+    width: 45%; /* Ajusta el ancho de las cards para la tablet */
+    text-align: center;
+    margin: 0 5px 20px; /* Espacio horizontal y vertical entre las cards */
+  }
+  .cards-div img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .cards-div-title h3 {
+    font-size: 22px;
+    color: rgb(26, 26, 26);
+    margin-bottom: 10px;
+  }
+  .cards-div-description {
+    color: rgb(48, 47, 47);
+    line-height: 1.5;
+    padding: 10px;
+  }
+  .cards-tazas {
+    margin-bottom: 5%;
+  }
+  .productos {
+    text-align: center;
+    padding: 4% 5%;
+    background-color: rgb(231, 229, 229);
+  }
+  .productos-title h2 {
+    font-size: 26px;
+    color: rgb(48, 47, 47);
+    margin-bottom: 10px;
+  }
+  .productos-parrafo p {
+    color: rgb(48, 47, 47);
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .cards-title {
+    text-align: center;
+    margin-top: 3%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4%;
+    padding: 2% 3%;
+  }
+  .cards-div {
+    width: 90%; /* Ajusta el ancho de las cards para el celular */
+    text-align: center;
+    margin: 0 5px 40px 0px; /* Espacio horizontal y vertical entre las cards */
+  }
+  .cards-div img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 3px;
+  }
+  .cards-div-title h3 {
+    font-size: 22px; /* Ajusta el tamaño del título para el celular */
+    color: rgb(48, 47, 47);
+    margin-bottom: 10px;
+  }
+  .cards-div-description {
+    color: #666;
+    line-height: 1.5;
+    padding: 10px;
+  }
+  .cards-tazas {
+    margin-bottom: 5%;
+  }
+  .productos {
+    text-align: center;
+    padding: 4% 5%; /* Ajusta el padding para el celular */
+    background-color: rgb(231, 229, 229);
+  }
+  .productos-title h2 {
+    font-size: 26px; /* Ajusta el tamaño del título para el celular */
+    color: rgb(48, 47, 47);
+    margin-bottom: 10px;
+  }
+  .productos-parrafo p {
+    color: rgb(48, 47, 47);
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

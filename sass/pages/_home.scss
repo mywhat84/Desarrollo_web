@@ -1,0 +1,64 @@
+.menu-color {
+    background-color: $color-bg-primary;
+  }
+
+
+  .navbar-brand img {
+    width: 100px; /* Establece el ancho deseado */
+    height: auto; /* Establece la altura automática para mantener la proporción */
+  }
+
+  .color-link {
+    font-weight: bold;
+  }
+
+  .inicio {
+    padding: 10% 0 10% 0;
+    background-color: $color-bg-light;
+    text-align: center;
+
+    &-title__parrafo {
+        padding: 0 20% 0 20%;
+      }
+  }
+
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    padding: 2% 5% 2% 5%;
+
+      &-producto img{
+        padding: 5px;
+
+      }
+
+  }
+
+  footer {
+    background-color: $color-bg-primary;
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  //----------------CELULAR-----------------------
+
+  @media (max-width: 767px) {
+    .inicio {
+      padding: 10% 5%;
+    }
+  
+    .inicio-title__parrafo {
+      padding: 0 10px;
+    }
+  
+    .cards {
+      //margin-top: 50px;
+      padding: 2% 2%;
+      flex-wrap: wrap;
+    }
+  
+    .cards-producto img {
+      width: 100%;
+    }
+  }

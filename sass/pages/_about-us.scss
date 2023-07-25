@@ -1,0 +1,94 @@
+
+    .about-us {
+      display: flex;
+      align-items: center;
+      margin: 20px 0 20px 0;
+      padding: 2% 10%;
+        
+        &-image {
+          width: 600px;
+          height: auto;
+          margin-right: 20px;
+          border-radius: 4px;
+        }
+
+        &-content {
+          flex: 1;
+        }
+
+        &-title {
+          font-size: 30px;
+          color: $color-text-black;
+          margin-bottom: 10px;
+        }
+
+        &-text {
+          color: $color-text-black-2;
+          line-height: 1.5;
+        }
+
+        &-contenido {
+          text-align: center;
+          padding: 4% 10%;
+          background-color: $color-bg-tercero;
+          color: $color-bg-white;
+
+          h2 {
+            color: $color-text-yellow;
+            padding: 2% 0%;
+          }
+        }
+
+      }
+
+
+
+      //-----------------------TABLET---------------------------
+
+      @media (min-width: 768px) and (max-width: 1000px) {
+        .about-us {
+          display: block;
+          padding: 0% 1% 2%;
+      
+          &-image {
+            padding: 5px 20px;
+            width: 100%; 
+            height: auto; 
+            border-radius: 4px;
+          }
+      
+          &-content {
+            flex: 1;
+            text-align: center;
+          }
+      
+          &-title {
+            font-size: 26px; 
+          }
+        }
+      }
+    
+
+
+
+
+
+      //-----------------------CELULAR---------------------------
+
+      @media (max-width: 767px) {
+        .about-us {
+          display: block; /* Cambia a un diseño de bloque en dispositivos móviles */
+          text-align: center; /* Centra todo el contenido en dispositivos móviles */
+      
+
+          &-image {
+            width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+            height: auto; /* La altura se ajustará automáticamente */
+            margin-bottom: 20px;
+          }
+      
+          &-title {
+            font-size: 22px; /* Reduce aún más el tamaño del título para dispositivos móviles */
+          }
+        }
+      }

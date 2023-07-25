@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes somos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/sass/style.css">
+  
+    <meta name="description" content="contacto the simpsons merch">
+  </head>
     <body>
-            <header id="arriba">
+            <header id="header">
                 <!-- menu de bt -->
                 <nav class="navbar navbar-expand-lg menu-color">
                  <div class="container-fluid">
@@ -36,33 +38,63 @@
                  </div>
                </nav>
              </header>
+
+
+
+
     <main class="contacto">
-        <ul>
-            <li>Tel: 123-456-789</li>
-            <li>Correo: info@example.com</li>
-        </ul>
+
+        <div class="contacto-container">
+    <!-- Mapita -->
+    <div class="mapa">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13128.893513802088!2d-58.6208551!3d-34.6490612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d18283d387%3A0x9bf79e926bbec364!2sPM%20SPRAY%20-%20Servicio%20de%20GRAFFITI!5e0!3m2!1ses-419!2sar!4v1690250281298!5m2!1ses-419!2sar" width="600" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Formulario-->
+    <div class="formulario">
+      <h2>Comunicate con nosotros!</h2>
+      <form class="formulario-form">
+        <div class="formulario-div">
+          <label class="formulario-label" for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="formulario-div">
+          <label class="formulario-label" for="celular">Celular:</label>
+          <input type="tel" id="celular" name="celular" required>
+        </div>
+        <div class="formulario-div">  
+          <label class="formulario-label" for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!--contacto de The Simpsons Merch -->
+  <div class="contacto-simpsons">
+    <h1>Contacto de The Simpsons Merch</h1>
+    <p>WhatsApp: <a href="https://web.whatsapp.com/">11-2222-4343</a></p>
+    
+    <p>Email: contacto@thesimpsonmerch.com.ar</p>
+  </div>
     </main>
+
+
+
+
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
             <p>&copy; 2023 MiqueMania. Todos los derechos reservados.</p>
           </div>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link color-link" aria-current="page" href="/index.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-link" href="/page/about.html">NOSOTROS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-link" href="/page/productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link color-link" href="/page/contacto.html">CONTACTO</a>
-            </li>
         </div>
       </div>
     </footer>
+
+    <!-- script bt -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
