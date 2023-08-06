@@ -12,16 +12,39 @@
     font-weight: bold;
   }
 
+
+
   .inicio {
     padding: 10% 0 10% 0;
     background-color: $color-bg-light;
     text-align: center;
+
+    h1 {
+      color: $color-text-black;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 5px;
+      color: red;
+    }
+
+    h3 {
+      @extend .h2;
+    }
+
 
     &-title__parrafo {
         padding: 0 20% 0 20%;
       }
   }
 
+  .title-cards {
+    margin-top: 2rem;
+    text-align: center;
+    color: $color-text-black-2;
+  }
 
   .cards {
     display: flex;
@@ -46,11 +69,12 @@
   @media (max-width: 767px) {
     .inicio {
       padding: 10% 5%;
+
+      &-title__parrafo {
+        padding: 0 10px;
+      }
     }
   
-    .inicio-title__parrafo {
-      padding: 0 10px;
-    }
   
     .cards {
       //margin-top: 50px;

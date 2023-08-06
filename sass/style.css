@@ -39,6 +39,7 @@ html {
 .about-us-title {
   font-size: 30px;
   color: rgb(26, 26, 26);
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 .about-us-text {
@@ -86,6 +87,7 @@ html {
     margin-bottom: 20px;
   }
   .about-us-title {
+    margin-top: 2px;
     font-size: 22px; /* Reduce aún más el tamaño del título para dispositivos móviles */
   }
 }
@@ -107,8 +109,26 @@ html {
   background-color: rgb(231, 229, 229);
   text-align: center;
 }
+.inicio h1 {
+  color: rgb(26, 26, 26);
+  margin-bottom: 10px;
+}
+.inicio h2 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color: rgb(48, 47, 47);
+}
+.inicio h3 {
+  color: rgb(48, 47, 47);
+}
 .inicio-title__parrafo {
   padding: 0 20% 0 20%;
+}
+
+.title-cards {
+  margin-top: 2rem;
+  text-align: center;
+  color: rgb(48, 47, 47);
 }
 
 .cards {
@@ -209,7 +229,6 @@ iframe {
   margin: 10%;
 }
 .contacto-simpsons h1 {
-  font-size: 24px;
   margin-bottom: 10px;
 }
 .contacto-simpsons p {
@@ -224,6 +243,8 @@ iframe {
   }
 }
 .cards-title {
+  font-size: 24px;
+  color: rgb(26, 26, 26);
   text-align: center;
   margin-top: 5%;
 }
@@ -247,8 +268,6 @@ iframe {
   margin-bottom: 10px;
 }
 .cards-div-title h3 {
-  font-size: 24px;
-  color: rgb(26, 26, 26);
   margin-bottom: 10px;
 }
 .cards-div-description {

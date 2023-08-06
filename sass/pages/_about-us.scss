@@ -19,6 +19,7 @@
         &-title {
           font-size: 30px;
           color: $color-text-black;
+          margin-top: 10px;
           margin-bottom: 10px;
         }
 
@@ -88,6 +89,7 @@
           }
       
           &-title {
+            margin-top: 2px;
             font-size: 22px; /* Reduce aún más el tamaño del título para dispositivos móviles */
           }
         }
